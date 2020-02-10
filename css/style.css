@@ -57,3 +57,16 @@
 .caja11 {
     background-color: black;
 }
+
+@keyframes colores {
+    from {
+        background: red;
+    }
+    to {
+        background: blue;
+    }
+}
+
+.animacion {
+    animation: colores 3s ease;
+}
