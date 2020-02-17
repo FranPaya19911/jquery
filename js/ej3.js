@@ -1,10 +1,38 @@
 $(function() {
-    $('.caja1').click(function() { alert("hola") });
-    $('.caja2').dblclick(function() { $('.caja2').hide() })
-    $('.caja3').mouseenter(function() { $('.caja3').fadeOut(500) })
-    $('.caja4').mouseleave(function() { $('.caja4').css('background', "brown") })
-    $('.caja5').hover(function() { $('.caja5').css("color", "yellow") })
-    $('.caja5').mouseleave(function() { $('.caja5').css("color", "orange") })
-    $('.caja6').mousedown(function() { $('.caja6').html("pulsado") })
-    $('.caja7').mouseup(function() { $('.caja7').html("soltado") })
+    $('#b1').click(function() {
+        $('.caja1').animate({
+            marginLeft: "+=100px"
+        }, 300);
+    });
+    $('#b2').click(function() {
+        $('.caja1').animate({
+            marginTop: "+=100px"
+        }, 300)
+    })
+    $('#b3').click(function() {
+        $('.caja1').animate({
+                width: "+=50px",
+                height: "+=50px"
+            },
+            300)
+    })
+    $('#b4').click(function() {
+        $('.caja1').animate({
+                width: "-=50px",
+                height: "-=50px"
+            },
+            300)
+    })
+    $('#b5').click(function() {
+        $('.caja1').animate({
+                opacity: "+=1"
+            },
+            300)
+    })
+    $('#b6').click(function() {
+        $('.caja1').animate({
+                opacity: "-=0.5"
+            },
+            300)
+    })
 })
